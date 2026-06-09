@@ -1,6 +1,6 @@
 {
-  "_comment": "Mandatory-update floor for MinPin. The app's MinimumVersionGuard fetches this on launch. To force everyone below build N to update before continuing, set minimumBuild to N (the CFBundleVersion you require). Leave minimumBuild at 0 to disable the kill switch — it's intended for emergencies (API cutover, security recall), not regular releases.",
-  "minimumBuild": 0,
-  "minimumVersion": "0.0.0",
-  "reason": "This version of MinPin is below the supported floor."
+  "_comment": "TEMPORARY — smoke test of MinimumVersionGuard. minimumBuild 9999 is far above any real MinPin build so every installed copy will be blocked. Revert to 0 immediately after the test.",
+  "minimumBuild": 9999,
+  "minimumVersion": "9.9.9",
+  "reason": "Smoke test of the MinimumVersionGuard kill switch. If you see this in MinPin, the guard is working — close it and wait a minute for it to be reverted."
 }
